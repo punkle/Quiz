@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.brianfletcher"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+
+    <application 
+        android:icon="@drawable/icon" 
+        android:label="@string/app_name"
+        android:name="org.brianfletcher.Quiz"
+        >
+        
+        <activity android:name=".SelectPictureQuizActivity"
+                  android:label="@string/app_name" 
+                  android:screenOrientation="landscape" 
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+        <activity android:name=".SelectTextQuizActivity"
+                  android:label="@string/app_name" 
+                  android:screenOrientation="landscape" 
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+                 
+        </activity>
+        <activity 	android:name="ResultsActivity" 
+            		android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            		android:screenOrientation="landscape">
+            
+        </activity>
+        <activity 	android:screenOrientation="landscape" 
+            	  	android:name=".MainMenu" 
+            	  	android:theme="@android:style/Theme.NoTitleBar.Fullscreen">            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity 	android:name="FacebookAuthenticate" 
+            	  	android:screenOrientation="landscape" 
+            	  	android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            
+        </activity>
+		<activity android:name="AddWebView"
+                  android:label="@string/app_name" 
+                  android:screenOrientation="landscape" 
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET">
+	</uses-permission>
+</manifest>

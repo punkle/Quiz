@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:layout_gravity="center|center_vertical">
+  
+  <TextView 
+      android:layout_height="wrap_content" 
+      android:layout_width="wrap_content" 
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+      android:text="Score" 
+      android:id="@+id/score_result" 
+      android:layout_gravity="center" 
+      android:layout_margin="10px"
+      ></TextView>
+  <TextView 
+      android:layout_height="wrap_content" 
+      android:layout_width="wrap_content" 
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+      android:text="Score" 
+      android:id="@+id/score" 
+      android:layout_gravity="center" 
+      android:layout_margin="10px"
+      ></TextView>
+  <Button 
+      android:id="@+id/mainmenu" 
+      android:layout_height="wrap_content" 
+      android:text="Main Menu" 
+	  android:layout_gravity="center" 
+	  android:layout_margin="10px" 
+	  android:layout_width="130dp"
+	  ></Button>
+  <Button 
+      android:visibility="invisible"
+      android:text="Post To Facebook" 
+      android:layout_height="wrap_content" 
+      android:layout_gravity="center" 
+      android:id="@+id/facebookButton" 
+      android:layout_width="130dp" 
+      android:layout_margin="10px"
+      ></Button>
+      
+</LinearLayout>

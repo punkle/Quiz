@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#009900">
+    	<TextView 
+    	    android:layout_width="fill_parent" 
+    	    android:textAppearance="?android:attr/textAppearanceLarge" 
+    	    android:layout_height="wrap_content" 
+    	    android:id="@+id/score_text_view_level1" 
+    	    android:text="Score Text"
+    	    android:padding="20px"
+    	    android:gravity="center">
+    	</TextView>
+    	<TextView 
+		    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/instruction_text" 
+    	    android:text="What to do"
+    	    android:textAppearance="?android:attr/textAppearanceLarge"
+    	    android:gravity="center"
+    	    />
+
+<LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:background="#000099"> 
+
+    <LinearLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:padding="10px"
+	    android:background="#990099">
+	    <ImageButton 
+	        android:id="@+id/imageButton1" 
+	        android:layout_height="fill_parent" 
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1">
+	        
+	    </ImageButton>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:padding="10px"
+	    android:background="#999099">
+	    <ImageButton 
+	        android:id="@+id/imageButton2" 
+	        android:layout_height="fill_parent" 
+	        android:layout_width="fill_parent" 
+	        android:layout_weight="1"
+	        >
+	        
+	    </ImageButton>
+    </LinearLayout>
+    <LinearLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:padding="10px"
+	    android:background="#099099">
+	    <ImageButton 
+	        android:id="@+id/imageButton3" 
+	        android:layout_height="fill_parent" 
+	        android:layout_width="fill_parent" 
+	        android:layout_weight="1">
+	    </ImageButton>
+    </LinearLayout>
+</LinearLayout>
+
+<TextView 
+    android:id="@+id/hint_text_view" 
+	android:textAppearance="?android:attr/textAppearanceLarge" 
+	android:layout_height="wrap_content" 
+	android:text="Hint Text"
+    android:padding="5px"
+    android:gravity="center"
+    android:layout_width="fill_parent">
+</TextView>
+<!--  Button 
+    android:id="@+id/select_button" 
+    android:text="Select" 
+    android:layout_height="wrap_content" 
+    android:padding="5px"
+    android:gravity="center"
+    android:layout_width="fill_parent"></Button-->
+
+<TextView 
+    android:id="@+id/timer" 
+	android:textAppearance="?android:attr/textAppearanceLarge" 
+	android:layout_height="wrap_content" 
+	android:text="Timer"
+    android:padding="5px"
+    android:gravity="center"
+    android:layout_width="fill_parent">
+</TextView>
+</LinearLayout>

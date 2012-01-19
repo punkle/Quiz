@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+	        android:layout_weight="1"
+        	android:background="#ffff22"
+        	android:padding="2px">
+        	<Button 
+        		android:id="@+id/start"
+        		android:text="Start"
+        	    android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+	        android:layout_weight="1"
+        	android:background="#ffff22"
+        	android:padding="2px">
+        	<Button 
+        		android:id="@+id/starttexttopic"
+        		android:text="Start Text to Pic"
+        	    android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+	        android:layout_weight="1"
+        	android:background="#ffff22"
+        	android:padding="2px">
+        	<Button 
+        		android:id="@+id/startpictotext"
+        		android:text="Start Pic to Text"
+        	    android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+	        android:layout_weight="1"
+        	android:background="#bbff22" 
+        	android:padding="2px">
+        	<Button 
+        	    android:id="@+id/info"
+        	    android:text="Info"
+        	    android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+	        android:layout_weight="1"
+        	android:background="#ffbb22"
+        	android:padding="2px">
+        	<Button 
+        	    android:id="@+id/help"
+        	    android:text="Help"
+        	    android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+	    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

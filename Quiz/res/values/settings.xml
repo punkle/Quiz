@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="no_of_levels">2</integer>
+    <array name="level1">
+        <!-- Type of quiz -->
+        <item>org.brianfletcher.SelectTextQuizActivity</item>
+        <!-- Number of questions -->
+        <item>20</item>
+        <!-- Number of seconds -->
+        <item>25</item>
+        <!-- quiz questions file name -->
+        <item>quizquestions</item>
+        <item>Select matching Text</item>
+    </array>
+    <array name="level2">
+        <!-- Type of quiz -->
+        <item>org.brianfletcher.SelectPictureQuizActivity</item>
+        <!-- Number of questions -->
+        <item>20</item>
+        <!-- Number of seconds -->
+        <item>25</item>
+        <!-- quiz questions file name -->
+        <item>quizquestions</item>
+        <item>Select matching Picture</item>
+    </array>
+</resources>

@@ -2,8 +2,6 @@ package org.brianfletcher.question;
 
 import java.util.ArrayList;
 
-import android.content.res.Resources;
-
 public class Question {
 	private Fact[] facts;
 	private int answerFactId;

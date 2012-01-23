@@ -7,8 +7,6 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 
-import org.brianfletcher.R;
-
 import android.content.res.Resources;
 
 import com.csvreader.CsvReader;
@@ -43,10 +41,8 @@ public class FactParser {
 	 			facts.add(newFact);
 	 				 		}
 	 		} catch (FileNotFoundException e) {
-	 			// TODO Auto-generated catch block
 	 			e.printStackTrace();
 	 		} catch (IOException e) {
-	 			// TODO Auto-generated catch block
 	 			e.printStackTrace();
 	 		}
     	}

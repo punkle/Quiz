@@ -6,13 +6,11 @@ import org.brianfletcher.question.Question;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -194,12 +192,7 @@ public class SelectTextQuizActivity extends Activity {
 				quiz.launchNextLevel();
 			} catch (GameOverException e) {
 				quiz.launchGameOver();
-			}
-	    		
-	    		
-	    		
-	    	
-	    	
+			}	
 	    }
 	
 	@Override

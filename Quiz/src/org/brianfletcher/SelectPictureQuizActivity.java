@@ -12,7 +12,6 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -20,7 +19,6 @@ public class SelectPictureQuizActivity extends Activity {
 	protected Question question;
 	
 	private ImageButton button[] = new ImageButton[3];
-	private Button selectButton;
 	protected TextView timerTextView;
 	
 	protected int questionNo;

@@ -63,6 +63,8 @@ public class Quiz extends Application {
 			levelParameters.putString("quizQuestionsFile", quizQuestionsFile);
 			String instruction_text = array.getString(4);
 			levelParameters.putString("instruction_text", instruction_text);
+			String level_name = array.getString(5);
+			levelParameters.putString("level_name", level_name);
 		
 			intent.putExtras(levelParameters);
 			

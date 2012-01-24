@@ -55,7 +55,7 @@ public class ResultsActivity extends Activity implements DialogListener, Request
 			Bundle levelResult = levelResults.get(i);
 			correctAnswerCount += levelResult.getInt("correctAnswerCount");
 			numberOfQuestions += levelResult.getInt("numberOfQuestions");
-			scoreText += "Level " + (i) + " : " + levelResult.getInt("correctAnswerCount") +"/"+levelResult.getInt("numberOfQuestions") + "\n";
+			scoreText += levelResult.getString("level_name") +" : " + levelResult.getInt("correctAnswerCount") +"/"+levelResult.getInt("numberOfQuestions") + "\n";
 		}
 		scoreText += "Total : " + correctAnswerCount + " / " + numberOfQuestions;
 		

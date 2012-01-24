@@ -11,6 +11,7 @@
         <!-- quiz questions file name -->
         <item>quizquestions</item>
         <item>Select matching Text</item>
+        <item>Level 1</item>
     </array>
     <array name="level2">
         <!-- Type of quiz -->
@@ -22,5 +23,6 @@
         <!-- quiz questions file name -->
         <item>quizquestions</item>
         <item>Select matching Picture</item>
+        <item>Level 2</item>
     </array>
 </resources>

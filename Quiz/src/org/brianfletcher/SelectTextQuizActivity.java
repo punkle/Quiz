@@ -184,6 +184,7 @@ public class SelectTextQuizActivity extends Activity {
 	    	Bundle levelResult = new Bundle();
 	    	levelResult.putInt("numberOfQuestions", numberOfQuestions);
 	    	levelResult.putInt("correctAnswerCount", correctAnswerCount);
+	    	levelResult.putString("level_name", getIntent().getStringExtra("level_name"));
 	    	
 	    	quiz.putLevelResults(levelResult);
 	    	

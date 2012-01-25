@@ -6,7 +6,7 @@ import android.webkit.WebView;
 
 public class AddWebView extends Activity {
 	private WebView mWebView;
-	
+	 
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.addwebview);

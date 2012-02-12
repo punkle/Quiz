@@ -78,7 +78,18 @@
         	    android:layout_width="fill_parent"
         		android:layout_height="fill_parent"/>
 	    </LinearLayout>
-
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+	        android:layout_weight="1"
+        	android:background="#ffbb22"
+        	android:padding="2px">
+        	<Button 
+        	    android:id="@+id/share"
+        	    android:text="Share"
+        	    android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+	    </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

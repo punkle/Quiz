@@ -17,6 +17,10 @@ public class Quiz extends Application {
 		return noOfLevels;
 	}
 	
+	public int getCurrentLevel() {
+		return currentLevel;
+	}
+	
 	public Quiz(){
 		currentLevel = 1;
 	}

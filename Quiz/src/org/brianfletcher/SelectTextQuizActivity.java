@@ -1,5 +1,7 @@
 package org.brianfletcher;
 
+import java.util.ArrayList;
+
 import org.brianfletcher.question.Fact;
 import org.brianfletcher.question.FactParser;
 import org.brianfletcher.question.Question;
@@ -28,11 +30,13 @@ public class SelectTextQuizActivity extends Activity {
 	private AsyncTask<Integer,Integer, Boolean> timertask;
 	private int numberOfQuestions;
 	private FactParser factParser;
+	private ArrayList<String> imagesDone;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);
+		imagesDone = new ArrayList<String>();
 		setContentView(R.layout.selecttextlayout);
 		createDialog();
 		hintImage = (ImageView)findViewById(R.id.hintImage);
@@ -88,9 +92,9 @@ public class SelectTextQuizActivity extends Activity {
 		int numberOfQuestions = getIntent().getIntExtra("numberOfQuestions",-1);
 		String instruction_text = getIntent().getStringExtra("instruction_text");
 		
-		
+		Quiz quiz = (Quiz)getApplication();
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage("You will have " + numberOfSeconds + " seconds to answer " + numberOfQuestions + " questions." + instruction_text)
+		builder.setMessage("Level " +quiz.getCurrentLevel() + ": You will have " + numberOfSeconds + " seconds to answer " + numberOfQuestions + " questions. " + instruction_text)
 		       .setCancelable(false)
 		       .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		           public void onClick(DialogInterface dialog, int id) {
@@ -116,7 +120,12 @@ public class SelectTextQuizActivity extends Activity {
 		scoreTextView.setText("Q " + questionNumber +"\n" + correctAnswerCount + " / " + numberOfQuestions);
 		
 		selectedAnswer = -1;
-		question = new Question(factParser);
+		
+		do{
+			question = new Question(factParser);
+		} while(imagesDone.contains(question.getCorrectAnswer().getImageKey() ));
+		
+		imagesDone.add(question.getCorrectAnswer().getImageKey());
 		
 		Fact[] facts = question.getFacts();
 		hintImage.setImageResource(question.getCorrectAnswer().getImageResourceId(getResources(), getPackageName()));

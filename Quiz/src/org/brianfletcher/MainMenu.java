@@ -53,7 +53,7 @@ public class MainMenu extends Activity {
 				Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
 				shareIntent.setType("text/plain");
 				shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getResources().getString(R.string.app_name));
-				shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "https://market.android.com/details?id=" + getPackageName());
+				shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, getResources().getString(R.string.share_message) + " https://market.android.com/details?id=" + getPackageName());
 
 				startActivity(Intent.createChooser(shareIntent, "Share"));
 			}
@@ -88,7 +88,11 @@ public class MainMenu extends Activity {
 	}
 	
 	public void onAddClickListener(View target){
-		Intent browserIntent = new Intent(this,AddWebView.class);
-		startActivity(browserIntent);
+		try {
+			Intent browserIntent = new Intent(this,Class.forName(getResources().getString(R.string.add_class)));
+			startActivity(browserIntent);
+		} catch (ClassNotFoundException e){
+			e.printStackTrace();
+		}
 	}
 }

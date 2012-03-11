@@ -9,4 +9,6 @@
     <string name="helpText">When you press start you will be presented with a question. Answer the question by touching the answer. You are given a set time to answer the questions.</string>
     <string name="add_url">http://www.brianfletcher.org</string>
     <string name="facebook_key">1234</string>
+    <string name="add_class">org.brianfletcher.AddWebView</string>
+    <string name="share_message">Download the app: </string>
 </resources>

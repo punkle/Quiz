@@ -68,7 +68,7 @@ public class ResultsActivity extends Activity implements DialogListener, Request
 			
 			public void onClick(View v) {
 				Intent intent = new Intent(ResultsActivity.this,MainMenu.class);
-		    	quiz.resetQuiz();
+		    	
 				startActivity(intent);
 				finish();
 			}
@@ -86,6 +86,7 @@ public class ResultsActivity extends Activity implements DialogListener, Request
 
 			}
 		});
+    	quiz.resetQuiz();
 	}
 	@Override
 	protected void onPause() {
